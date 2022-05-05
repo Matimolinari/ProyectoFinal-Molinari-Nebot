@@ -1,0 +1,57 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<div class="text-center">
+    <h1>Formulario - Agregar Amigo</h1>
+    
+    {% if miFormulario.errors %}
+
+    <p style="color: red;"> Están mal los datos, revisar</p>
+
+    {% endif %}
+
+
+    <form data-sb-form-api-token="API_TOKEN" style="margin: auto; width: 370px;" action="" method="POST" >
+        {% csrf_token %}
+        <div class="form-floating mb-3">
+            <table >
+              {{ miFormulario.as_table }}
+            </table>
+            <input class="btn btn-primary btn-xl" type="submit", value="Enviar">
+        </div>
+       
+
+    </form>
+
+    <h3>Podes buscar el apellido de un Amigo: </h3>
+
+    <form id="contactForm" data-sb-form-api-token="API_TOKEN" action="/Apptp/buscaramigos/" method="GET">
+
+        <input class="form-control" type="text" style="margin: auto; width: 370px;" placeholder="Ingrese el apellido..." data-sb-validations="required" type="text" name="apellido" id="apellido">
+        <label for="name"></label>
+        <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+        <input class="btn btn-primary btn-xl" type="submit" value="Buscar">
+
+    </form>
+
+    {% if amigos %}
+
+    <h4>Estamos buscando a : {{apellido}}</h4>
+
+    <ul>
+    {% for f in amigos %}
+        <li> {{f.nombre}} </li>
+        <li> {{f.apellido}} </li>
+        <li> {{f.email}} </li>
+        <li> {{f.telefono}} </li>
+    {% endfor %}
+
+    </ul>
+
+    {% endif %}
+</div>
+  
+
+{% endblock %}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle>Amigoscoder Lista</tittle>
+</head>
+<body>
+    <h1>Amigos de Coder</h1>
+    <ul>
+        {% for amigoscoder in object_list %}
+            <li>
+                <p>NOMBRE : {{ amigoscoder.nombre }} </p>
+                <p>
+                 <a href="{% url 'Detailamigoscoder' amigoscoder.id %}">Ver</a>
+                 <a href="{% url 'Editamigoscoder' amigoscoder.id %}">Editar</a>
+                 <a href="{% url 'Deleteamigoscoder' amigoscoder.id %}">Borrar</a>
+                </p>
+            </li>
+        {% endfor %}
+        <p>
+            <a href="{% url 'padre' %}">Regresar</a>
+        </p>
+
+        
+
+
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittle> Amigos lista</title>
+</head>
+
+<body>
+    <h1> Amigos - Python</h1>
+    <ul>
+        {% for amigos in object_list %}
+
+
+          <li>
+              <p> Nombre : {{amigos.nombre}} </p>
+                <p>
+                  <a href="{% url 'DetailAmigos' amigos.id %}">Ver</a>
+                  <a href="{% url 'EditAmigos' amigos.id %}">Edit</a>
+                  <a href="{% url 'DeleteAmigos' amigos.id %}">Borrar</a>
+               </p>  
+          </li>
+        {% endfor %}
+        <p>
+          <a href="{% url 'padre' %}">Regresar</a>
+        </p>
+
+    </ul>
+</body>
+</html>

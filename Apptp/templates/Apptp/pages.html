@@ -1,0 +1,18 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+    {% block contenidoQueCambia %}
+    <div class="text-center">
+        <h2>BD de Familiares:</h2>
+        <a class="btn btn-primary btn-xl" type="submit" href="{% url 'ListFamiliar'%}">Lista de Familiares</a>
+    </div>
+    <div class="text-center">
+        <h2>BD de Amigos:</h2>
+        <a class="btn btn-primary btn-xl" type="submit" href="{% url 'ListAmigos'%}">Lista de Amigos</a>
+    </div>
+    <div class="text-center">
+        <h2>BD de Amigos-Coder:</h2>
+        <a class="btn btn-primary btn-xl" type="submit" href="{% url 'List'%}">Lista de Amigos-Coder</a>
+    </div>
+    {% endblock %}

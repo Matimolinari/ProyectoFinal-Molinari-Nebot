@@ -1,0 +1,57 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>Estudiantes</h1>
+    <p>Info de los estudiantes</p>
+
+    <h1>hoy es : {{hoy}}</h1>
+
+    <h2>Esta son las edades de la familia : </h2>
+    <p>
+    {% for n in edades %}
+      {{n}}
+      <br>
+      
+    {% endfor %}
+    </p>
+    
+    <h3>En esta familia se encuentran  : {{familiar1}} , {{familiar2}}  , {{familiar3}}</h3>
+
+    <h3>Podes buscar un apellido:</h3>
+
+    <form action="/Apptp/buscar/" method="GET">
+
+        <input type="text" name="apellido" id="apellido">
+
+        <input type="submit" value="Buscar">
+
+
+
+
+    </form>
+
+    
+
+    {% if cursos %}
+
+    <p>Estamos buscando el: {{apellido}}</p>
+
+    <ul>
+	{% for p in persona %}
+		<li> {{p.nombre}} </li>
+		<li> {{p.apellido}} </li>
+	{% endfor %}
+
+    </ul>
+
+    {% endif %}
+
+
+  
+
+{% endblock %}

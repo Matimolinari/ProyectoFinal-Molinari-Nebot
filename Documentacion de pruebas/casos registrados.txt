@@ -1,0 +1,85 @@
+
+
+ En este documento dentro de la base de datos se van a poder ver los usuarios que creamos
+con los cuales hicimos las pruebas del login , el agregarles un avatar y registrar personas.
+
+Usuarios creados: Aceituna(con su avatar)-TEST(con su avatar)-TEST2(con su avatar)
+Superususarios: Matias(con su avatar)-Mariano(Con su avatar)
+
+
+
+
+Amigos:Albaro Vaisher  - Lucas Zammor - Braian Anyala - Dario sayeh.
+Familiares:Amado Molinari  - Alexis Molinari - Monica Molinari - Cecilia Molinari.
+amigoscoder: Nebot Mariano - Bertoli Matias - Uribe Tomas - Rumani Gabriel.
+
+--------------------------------------------------------------------------------------------
+
+Amigos:
+Nombre :Albaro 
+Apellido :Vaisher 
+email:albarovaisher@gmail.com
+numero:221345356346
+
+Nombre :Lucas 
+Apellido : Zammor
+email: lucaszammor@yahoo.com.ar
+ telefono : 2215645787978
+
+Nombre :Braian
+Apellido :Anyala
+email:braiananyala@hotmail.com
+telefono: 22189345
+
+nombre : Dario 
+apellido:sayeh.
+email: dariosayeh@hotmail.com
+telefono:221980547
+
+--------------------------------------------------------------------------------------------
+
+Familiares:
+
+Nombre:Amado 
+Apellido:Molinari 
+email:amadomolinari@yahoo.com.ar
+Numero: 2215646459
+
+Nombre:Alexis
+Apellido: Lopez Osornio
+email:alexismolinari@live.com
+telefono:2216321788
+Nombre:Monica 
+Apellido:Nebot
+email:monicanebot@gmail.com
+telefono:2215676756
+
+Nombre :Cecilia 
+Apellido:Lopez
+email:cecilianebot@gmail.com
+telefono:22153464576
+--------------------------------------------------------------------------------------------
+
+
+amigoscoder: 
+
+Nombre:Mariano
+Apellido:Nebot
+email:marianonebot@gmail.com
+telefo:22156732
+
+Nombre : Matias
+Apellido : Bertoli
+email : matiasbertoli@live.com
+telefono:2218945634
+
+Nombre :Tomas.
+Apellido : Uribe
+Email: tomasuribe@gmail.com
+telefono:221982346
+
+Nombre : Gabriel
+Apellido:Rumani
+email:gabrielrumani@hotmail.com
+telefono:2215467568943
+

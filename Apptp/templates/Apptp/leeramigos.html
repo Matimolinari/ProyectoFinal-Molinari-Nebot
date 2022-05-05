@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo los amigos de coder</title>
+</head>
+<body>
+    {%for p in amigos %}
+      <li>{{p}}</li>
+      <button>
+          <a href="{% url 'EliminarAmigos' p.nombre %}"> Eliminar</a>
+          <a href="{%url 'EditarAmigos' p.nombre %}"> Editar</a>
+
+      </button>
+
+    
+
+
+    {%endfor%}
+    <br>
+    <br>
+    <a href = "amigos"> Agregar otros amigos</a>
+
+ 
+    
+</body>
+</html>

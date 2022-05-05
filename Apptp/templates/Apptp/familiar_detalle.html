@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <tittel> Familiar detalles </title>
+</head> 
+<body>
+
+
+
+    <p>Nombre del Familiar : <i>{{ familiar.nombre }}</i></p>
+    <p>Apellido: <i>{{ familiar.apellido }}</i></p>
+    <p>Email: <i>{{ familiar.email }}</i></p>
+    <p>Telefono:<i> {{ familiar.telefono }}</i></p>
+    <p>
+        <a href="{% url 'ListFamiliar' %}">Regresar</a>
+    </p>
+
+</body> 
+</html>

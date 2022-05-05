@@ -1,0 +1,15 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <div>
+        <form data-sb-form-api-token="API_TOKEN" style="margin: auto; width: 370px;"action = "" method="POST">
+            <h3>Ingrese los datos para crear su usuario</h3>
+            {% csrf_token %}
+            {{form.as_p}}
+            <button type="submit">Registrese</button>
+
+        </form>
+    </div>
+{% endblock %}

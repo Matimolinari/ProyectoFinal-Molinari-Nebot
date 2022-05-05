@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrar Familiar</title>
+</head>
+<body>
+
+
+    <form method="post"> {% csrf_token %}
+        ¿Seguro que queres borrar el Familiar "{{object}}"?
+        <input type= "submit" value = "Submit"/>
+    </form>
+    <p>
+        <a href="{% url 'ListFamiliar' %}">Regresar</a>
+    </p>
+        
+</body>
+</html>

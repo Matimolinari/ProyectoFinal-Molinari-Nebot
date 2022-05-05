@@ -1,0 +1,12 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<div class="text-center">
+    <h2 style="text-center"> Listas de toda la infromacion almacenada en la BD</h2>
+    <a class="btn btn-primary btn-xl" type="submit" href="{% url 'listbd'%}">Informacion BD</a>
+
+</div>
+
+{% endblock %}

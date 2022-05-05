@@ -1,0 +1,59 @@
+{% extends "Apptp/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <div class="text-center">
+        <h1>Formulario - Agregar Familiar</h1>
+        
+        {% if miFormulario.errors %}
+
+        <p style="color: red;"> Están mal los datos, revisar</p>
+
+        {% endif %}
+
+
+        <form action="" method="POST" >{% csrf_token %}
+
+            <table >
+
+                {{ miFormulario.as_table }}
+
+
+            </table>
+
+
+            <input type="submit", value="Enviar">
+
+        </form>
+
+        <h3>Podes buscar el apellido de un Familiar:</h3>
+
+        <form action="/Apptp/buscar/" method="GET">
+
+            <input type="text" name="apellido" id="apellido">
+
+            <input type="submit" value="Buscar">
+
+
+
+
+        </form>
+
+        
+
+        {% if familiar %}
+
+        <p>Estamos buscando el: {{apellido}}</p>
+
+        <ul>
+        {% for f in familiar %}
+            <li> {{f.nombre}} </li>
+            <li> {{f.apellido}} </li>
+        {% endfor %}
+
+        </ul>
+
+        {% endif %}
+    </div>
+{% endblock %}
