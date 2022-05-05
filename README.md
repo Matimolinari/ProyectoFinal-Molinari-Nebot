@@ -1,6 +1,6 @@
 # ProyectoFinal-Molinari-Nebot
 Entrega final del proyecto sobre la creacion de una APP WEB mediante el uso de DJANGO
-En esta entrega se podra ver e interactuar con la aplicacion que hemos creado en base al aprendisaje obtenido mediante CoderHouse.
+En esta entrega se podra ver e interactuar con la aplicacion que hemos creado en base al aprendisaje obtenido mediante CoderHouse la cual tiene la finalidad del registro y busqueda de personas mediante su apellido
 
 
 
